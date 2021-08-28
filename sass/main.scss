@@ -1,1 +1,32 @@
 @import "./Utils/variables";
+
+/* Body */
+body {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    img {
+        height: 30px;
+    }
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: $couleur-footer;
+    color: $couleur-footer-texte;
+    ul {
+        list-style-type: none;
+    }
+}
