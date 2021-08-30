@@ -1,0 +1,16 @@
+@mixin Ombre-exter {
+    box-shadow: lightgrey 0px 5px 5px;
+}
+@mixin Bouton-primaire {
+    color: white;
+    background-color: $couleur-secondaire;
+    height: 43px;
+    width: 180px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: lightgrey 0px 5px 5px, $couleur-primaire -8px -10px 30px inset;
+    &:hover {
+        background-color: lighten($color: $couleur-secondaire, $amount: 3%);
+        box-shadow: lightgray 0px 8px 8px, lighten($color: $couleur-primaire, $amount: 3%) -8px -10px 30px inset;
+    }
+}
