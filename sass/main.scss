@@ -91,7 +91,7 @@ header {
         align-items: center;
         border-radius: 18px;
         @include Ombre-exter;
-        &:before {
+        &:before { /* Compteur liste */
             content: counter(li);
             counter-increment: li;
             width: 20px;
@@ -123,7 +123,63 @@ header {
         color: $couleur-primaire;
     }
 }
+/* Restaurant Accueil */
+#Resto-Accueil {
+    background-color: $couleur-fond-primaire;
+    width: 100%;
+    padding-bottom: 50px;
+    > div { /* Liste des Restaurants */
+        width: 100%;
+        height: 1080px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        a {  /* Bloc de chaque Restaurant */
+            text-decoration: none;
+            color: $couleur-texte-primaire;
+            width: 290px;
+            height: 250px;
+            border-radius: 15px;
+            overflow: hidden;
+            @include Ombre-exter;
+            article {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 100%;
+                height: 100%;
+                .Legende-Resto {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 25%;
+                    background-color: $couleur-fond-secondaire;
+                    padding-left: 15px;
+                    padding-right: 20px;
+                    i {
+                        font-size: 1.5em;
+                    }
+                    &__Texte {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        h3, p {
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
 
+.Resto-Accueil-Img {
+    height: 75%;
+	width: 100%;
+	object-fit: cover;
+}
 /* Footer */
 footer {
     width: 100%;
