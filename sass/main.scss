@@ -202,3 +202,52 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+/* Tablette */
+@media screen and (min-width: 760px) and (max-width: 870px){
+    body {
+        font-size: 1.1em;
+    }
+    #Notice {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Resto-Accueil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 650px;
+        > div {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+
+/* Pc */
+@media screen and (min-width: 1023px) {
+    #Notice {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+        ol {
+            flex-direction: row;
+            width: 75%;
+            justify-content: space-between;
+        }
+    }
+    #Resto-Accueil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 370px;
+        > div {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    
+}
