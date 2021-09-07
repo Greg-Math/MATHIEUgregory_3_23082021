@@ -1,3 +1,48 @@
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #353535;
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-left: -25px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer i {
+  margin-right: 10px;
+  font-size: 0.8em;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+}
+
+header img {
+  height: 25px;
+}
+
 /* GENERAL */
 /* Body */
 body {
@@ -33,26 +78,6 @@ body {
 /* Class Margin-left */
 .Marg-left {
   margin-left: 15px;
-}
-
-/* Header */
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 50px;
-  padding-top: 10px;
-}
-
-header img {
-  height: 25px;
 }
 
 /* Page d'Accueil */
@@ -290,33 +315,6 @@ header img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-/* Footer */
-footer {
-  width: 100%;
-  height: 200px;
-  background-color: #353535;
-  color: white;
-}
-
-footer ul {
-  list-style-type: none;
-  margin-left: -25px;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-footer i {
-  margin-right: 10px;
-  font-size: 0.8em;
-}
-
-footer li {
-  margin-bottom: 10px;
 }
 
 /* Tablette */
