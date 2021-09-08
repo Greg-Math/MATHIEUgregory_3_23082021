@@ -3,14 +3,15 @@
 }
 @mixin Bouton-primaire {
     color: white;
-    background-color: $couleur-secondaire;
+    background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
     height: 43px;
     width: 180px;
     border: none;
     border-radius: 25px;
-    box-shadow: lightgrey 0px 5px 5px, $couleur-primaire -8px -10px 30px inset;
+    box-shadow: lightgrey 0px 5px 5px;
+    transition: 1s;
     &:hover {
-        background-color: lighten($color: $couleur-secondaire, $amount: 3%);
-        box-shadow: lightgray 0px 8px 8px, lighten($color: $couleur-primaire, $amount: 3%) -8px -10px 30px inset;
+        background: linear-gradient(170deg, $couleur-secondaire-claire, $couleur-primaire-claire);
+        box-shadow: rgba(185, 185, 185, 0.986) 0px 8px 10px;
     }
 }

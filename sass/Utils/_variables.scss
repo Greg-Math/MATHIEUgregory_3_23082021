@@ -7,3 +7,5 @@ $couleur-fond-Loc: #EAEAEA;
 $couleur-fond-primaire: #F6F6F6;
 $couleur-fond-secondaire: white;
 $couleur-texte-primaire: black;
+$couleur-primaire-claire: lighten($couleur-primaire, 3%);
+$couleur-secondaire-claire: lighten($couleur-secondaire, 3%);
