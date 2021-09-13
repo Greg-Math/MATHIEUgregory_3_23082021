@@ -255,11 +255,11 @@ a {
 
 .Menu-Complet {
     height: 1030px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $couleur-fond-primaire;
-    border: red 2px solid;
     border-radius: 30px 30px 0px 0px;
     overflow: hidden;
     &__Titre {
@@ -269,6 +269,7 @@ a {
         justify-content: space-around;
         font-family: 'Shrikhand', cursive;
         i {
+            margin-left: 30px;
             font-size: 1.5em;
         }
     }
@@ -301,10 +302,11 @@ a {
     display: flex;
     background-color: $couleur-fond-secondaire;
     border-radius: 15px;
+    overflow: hidden;
     @include Ombre-exter;
     &__texte {
         height: 100%;
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         div {
@@ -332,5 +334,15 @@ a {
             margin-right: 5px;
             font-weight: bold;
         }
+    }
+    &__check {
+        height: 100%;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $couleur-tertiaire;
+        color: white;
+        font-size: 1.5em;
     }
 }
