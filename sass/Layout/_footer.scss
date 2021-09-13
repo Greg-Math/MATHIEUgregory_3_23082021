@@ -3,6 +3,10 @@ footer {
     height: 200px;
     background-color: $couleur-footer;
     color: $couleur-footer-texte;
+    h3 {
+        font-family: 'Shrikhand', cursive;
+        font-weight: unset;
+    }
     ul {
         list-style-type: none;
         margin-left: -25px;
