@@ -2,16 +2,16 @@
     box-shadow: lightgrey 0px 5px 5px;
 }
 @mixin Bouton-primaire {
-    color: white;
-    background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
     height: 43px;
     width: 180px;
+    color: white;
+    background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
     border: none;
     border-radius: 25px;
     box-shadow: lightgrey 0px 5px 5px;
-    transition: 1s;
+    transition: all 200ms linear;
     &:hover {
-        background: linear-gradient(170deg, $couleur-secondaire-claire, $couleur-primaire-claire);
+        filter: brightness(110%);
         box-shadow: rgba(185, 185, 185, 0.986) 0px 8px 10px;
     }
 }
