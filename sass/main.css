@@ -661,6 +661,13 @@ a {
   transition: all 0.5s;
 }
 
+.Menu-choix:hover > .Menu-choix__check > i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
 .Menu-choix:hover > .Menu-choix__texte > div {
   width: 185px;
   -webkit-transition: all 0.5s;

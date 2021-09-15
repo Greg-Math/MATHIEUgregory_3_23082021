@@ -376,6 +376,10 @@ a {
         margin-right: 0px;
         transition: all 0.5s;
     }
+    &:hover > .Menu-choix__check > i {
+        transform: rotate(360deg);
+        transition: all .5s;
+    }
     &:hover > .Menu-choix__texte > div {
         width: 185px;
         transition: all 0.5s;
