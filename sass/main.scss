@@ -263,6 +263,17 @@ a {
 }
 
 /* Pages Menus */
+@keyframes Menu-Anim {
+    0% {
+        margin-top: 15px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 5px;
+        opacity: 1;
+    }
+}
+
 .fa-arrow-left {
     font-size: 1.2em;
     position: absolute;
@@ -272,7 +283,7 @@ a {
 }
 
 .Menu-Complet {
-    height: 1030px;
+    height: 980px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -300,10 +311,9 @@ a {
 }
 
 .Menu-section {
-    height: 280px;
+    height: 260px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     font-size: 0.8em;
     &__Titre {
         p {
@@ -312,6 +322,7 @@ a {
         div {
             height: 3px;
             width: 30px;
+            margin-bottom: 5px;
             background-color: $couleur-tertiaire;
         }
     }
@@ -324,6 +335,10 @@ a {
     background-color: $couleur-fond-secondaire;
     border-radius: 15px;
     overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    animation: Menu-Anim $temps-animation-menu;
+    animation-fill-mode: both;
     @include Ombre-exter;
     &__texte {
         height: 100%;
@@ -384,4 +399,29 @@ a {
         width: 185px;
         transition: all 0.5s;
     }
+}
+
+.Delay1 {
+    animation-delay: $delai-animation-menu;
+}
+.Delay2 {
+    animation-delay: 2*$delai-animation-menu;
+}
+.Delay3 {
+    animation-delay: 3*$delai-animation-menu;
+}
+.Delay4 {
+    animation-delay: 4*$delai-animation-menu;
+}
+.Delay5 {
+    animation-delay: 5*$delai-animation-menu;
+}
+.Delay6 {
+    animation-delay: 6*$delai-animation-menu;
+}
+.Delay7 {
+    animation-delay: 7*$delai-animation-menu;
+}
+.Delay8 {
+    animation-delay: 8*$delai-animation-menu;
 }
