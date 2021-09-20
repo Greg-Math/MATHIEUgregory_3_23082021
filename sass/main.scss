@@ -213,54 +213,6 @@ a {
         transition: all .5s;
     }
 }
-/* Tablette */
-@media screen and (min-width: 760px) and (max-width: 870px){
-    body {
-        font-size: 1.1em;
-    }
-    #Notice {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #Resto-Accueil {
-        height: 650px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        > div {
-            flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-    }
-}
-
-/* Pc */
-@media screen and (min-width: 1023px) {
-    #Notice {
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        ol {
-            width: 75%;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    }
-    #Resto-Accueil {
-        height: 370px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        > div {
-            flex-direction: row;
-            justify-content: space-around;
-        }
-    }
-    
-}
 
 /* Pages Menus */
 @keyframes Menu-Anim {
@@ -280,6 +232,15 @@ a {
     left: 20px;
     top: 23px;
     color: $couleur-footer;
+}
+
+.Bloc-Img {
+    height: 230px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .Menu-Complet {
@@ -424,4 +385,74 @@ a {
 }
 .Delay8 {
     animation-delay: 8*$delai-animation-menu;
+}
+
+/* Tablette */
+@media screen and (min-width: 760px) and (max-width: 870px){
+    body {
+        font-size: 1.1em;
+    }
+    #Notice {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Resto-Accueil {
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > div {
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+/* Pc */
+@media screen and (min-width: 1023px) {
+    #Notice {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ol {
+            width: 75%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    #Resto-Accueil {
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > div {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    .Menu-Complet {
+        height: 450px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        top: -600px;
+        margin-bottom: -600px;
+        &__Titre {
+            width: 100%;
+            font-size: 1.5em;
+        }
+    }
+    .Menu-section__Titre {
+        font-size: 1.2em;
+    }
+    .Bloc-Img {
+        height: 1000px;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
 }
