@@ -11,17 +11,25 @@
 @keyframes Load {
     0% {
         opacity: .7;
+        position: fixed;
+        z-index: 10;
     }
     100% {
         opacity: .7;
+        position: fixed;
+        z-index: 10;
     }
 }
 @keyframes Spin {
     0% {
         transform: rotate(0deg);
+        position: fixed;
+        z-index: 10;
     }
     100% {
-        transform: rotate(900deg);
+        transform: rotate(960deg);
+        position: fixed;
+        z-index: 10;
     }
 }
 #Loader {
@@ -31,13 +39,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    z-index: 10;
     opacity: 0;
     animation: Load 2500ms;
     i {
-        position: fixed;
-        z-index: 10;
         color: $couleur-primaire;
         font-size: 4em;
         animation: Spin 2500ms linear;

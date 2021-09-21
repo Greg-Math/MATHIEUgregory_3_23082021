@@ -66,17 +66,25 @@ header img {
 @-webkit-keyframes Load {
   0% {
     opacity: .7;
+    position: fixed;
+    z-index: 10;
   }
   100% {
     opacity: .7;
+    position: fixed;
+    z-index: 10;
   }
 }
 @keyframes Load {
   0% {
     opacity: .7;
+    position: fixed;
+    z-index: 10;
   }
   100% {
     opacity: .7;
+    position: fixed;
+    z-index: 10;
   }
 }
 
@@ -84,10 +92,14 @@ header img {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    position: fixed;
+    z-index: 10;
   }
   100% {
-    -webkit-transform: rotate(900deg);
-            transform: rotate(900deg);
+    -webkit-transform: rotate(960deg);
+            transform: rotate(960deg);
+    position: fixed;
+    z-index: 10;
   }
 }
 
@@ -95,10 +107,14 @@ header img {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    position: fixed;
+    z-index: 10;
   }
   100% {
-    -webkit-transform: rotate(900deg);
-            transform: rotate(900deg);
+    -webkit-transform: rotate(960deg);
+            transform: rotate(960deg);
+    position: fixed;
+    z-index: 10;
   }
 }
 
@@ -115,16 +131,12 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: fixed;
-  z-index: 10;
   opacity: 0;
   -webkit-animation: Load 2500ms;
           animation: Load 2500ms;
 }
 
 #Loader i {
-  position: fixed;
-  z-index: 10;
   color: #9356DC;
   font-size: 4em;
   -webkit-animation: Spin 2500ms linear;
