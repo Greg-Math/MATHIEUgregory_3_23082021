@@ -104,8 +104,8 @@ header img {
     z-index: 10;
   }
   100% {
-    -webkit-transform: rotate(960deg);
-            transform: rotate(960deg);
+    -webkit-transform: rotate(460deg);
+            transform: rotate(460deg);
     position: fixed;
     z-index: 10;
   }
@@ -119,8 +119,8 @@ header img {
     z-index: 10;
   }
   100% {
-    -webkit-transform: rotate(960deg);
-            transform: rotate(960deg);
+    -webkit-transform: rotate(460deg);
+            transform: rotate(460deg);
     position: fixed;
     z-index: 10;
   }
@@ -140,15 +140,15 @@ header img {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 0;
-  -webkit-animation: Load 2500ms;
-          animation: Load 2500ms;
+  -webkit-animation: Load 1000ms;
+          animation: Load 1000ms;
 }
 
 #Loader i {
   color: #9356DC;
   font-size: 4em;
-  -webkit-animation: Spin 2500ms linear;
-          animation: Spin 2500ms linear;
+  -webkit-animation: Spin 1000ms linear;
+          animation: Spin 1000ms linear;
 }
 
 /* Liens */

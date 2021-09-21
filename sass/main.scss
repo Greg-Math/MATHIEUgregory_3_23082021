@@ -31,7 +31,7 @@
         z-index: 10;
     }
     100% {
-        transform: rotate(960deg);
+        transform: rotate(460deg);
         position: fixed;
         z-index: 10;
     }
@@ -44,11 +44,11 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    animation: Load 2500ms;
+    animation: Load 1000ms;
     i {
         color: $couleur-primaire;
         font-size: 4em;
-        animation: Spin 2500ms linear;
+        animation: Spin 1000ms linear;
     }
 }
 /* Liens */ 
