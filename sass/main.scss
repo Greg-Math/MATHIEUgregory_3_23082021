@@ -7,6 +7,42 @@
 
 /* GENERAL */
 
+/* Loader */
+@keyframes Load {
+    0% {
+        opacity: .7;
+    }
+    100% {
+        opacity: .7;
+    }
+}
+@keyframes Spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(900deg);
+    }
+}
+#Loader {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    opacity: 0;
+    animation: Load 2500ms;
+    i {
+        position: fixed;
+        z-index: 10;
+        color: $couleur-primaire;
+        font-size: 4em;
+        animation: Spin 2500ms linear;
+    }
+}
 /* Liens */ 
 a {
     text-decoration: none;
@@ -449,7 +485,7 @@ a {
         font-size: 1.2em;
     }
     .Bloc-Img {
-        height: 1000px;
+        height: 1200px;
         width: 100%;
         img {
             width: 100%;
