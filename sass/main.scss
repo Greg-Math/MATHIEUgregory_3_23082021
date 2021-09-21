@@ -13,6 +13,7 @@
         height: 100%;
         width: 100%;
         opacity: .7;
+        left: 0px;
         position: fixed;
         z-index: 10;
     }
@@ -20,6 +21,7 @@
         height: 100%;
         width: 100%;
         opacity: .7;
+        left: 0px;
         position: fixed;
         z-index: 10;
     }
@@ -405,30 +407,10 @@ a {
         transition: all 0.5s;
     }
 }
-
-.Delay1 {
-    animation-delay: $delai-animation-menu;
-}
-.Delay2 {
-    animation-delay: 2*$delai-animation-menu;
-}
-.Delay3 {
-    animation-delay: 3*$delai-animation-menu;
-}
-.Delay4 {
-    animation-delay: 4*$delai-animation-menu;
-}
-.Delay5 {
-    animation-delay: 5*$delai-animation-menu;
-}
-.Delay6 {
-    animation-delay: 6*$delai-animation-menu;
-}
-.Delay7 {
-    animation-delay: 7*$delai-animation-menu;
-}
-.Delay8 {
-    animation-delay: 8*$delai-animation-menu;
+@for $i from 1 through 9 {
+    .Delay#{$i} {
+      animation-delay: $i*$delai-animation-menu;
+    }
 }
 
 /* Tablette */
@@ -456,6 +438,9 @@ a {
 
 /* Pc */
 @media screen and (min-width: 1023px) {
+    body {
+        font-size: 1.1em;
+    }
     #Notice {
         height: 200px;
         display: flex;

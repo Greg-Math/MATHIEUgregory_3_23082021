@@ -1,6 +1,6 @@
 body {
   font-family: "roboto", sans-serif;
-  max-width: 100%;
+  max-width: 1270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,6 +9,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
+  position: relative;
+  background-color: #F6F6F6;
+  -webkit-box-shadow: 0px 0px 15px -5px #353535;
+          box-shadow: 0px 0px 15px -5px #353535;
 }
 
 footer {
@@ -52,7 +56,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   width: 100%;
+  max-width: 1270px;
   height: 50px;
   padding-top: 10px;
 }
@@ -68,6 +74,7 @@ header img {
     height: 100%;
     width: 100%;
     opacity: .7;
+    left: 0px;
     position: fixed;
     z-index: 10;
   }
@@ -75,6 +82,7 @@ header img {
     height: 100%;
     width: 100%;
     opacity: .7;
+    left: 0px;
     position: fixed;
     z-index: 10;
   }
@@ -84,6 +92,7 @@ header img {
     height: 100%;
     width: 100%;
     opacity: .7;
+    left: 0px;
     position: fixed;
     z-index: 10;
   }
@@ -91,6 +100,7 @@ header img {
     height: 100%;
     width: 100%;
     opacity: .7;
+    left: 0px;
     position: fixed;
     z-index: 10;
   }
@@ -754,6 +764,11 @@ a {
           animation-delay: 2000ms;
 }
 
+.Delay9 {
+  -webkit-animation-delay: 2250ms;
+          animation-delay: 2250ms;
+}
+
 /* Tablette */
 @media screen and (min-width: 760px) and (max-width: 870px) {
   body {
@@ -798,6 +813,9 @@ a {
 
 /* Pc */
 @media screen and (min-width: 1023px) {
+  body {
+    font-size: 1.1em;
+  }
   #Notice {
     height: 200px;
     display: -webkit-box;
