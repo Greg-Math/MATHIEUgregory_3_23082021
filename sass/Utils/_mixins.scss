@@ -8,7 +8,7 @@
     background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
     border: none;
     border-radius: 25px;
-    box-shadow: lightgrey 0px 5px 5px;
+    @include Ombre-exter;
     transition: all 200ms linear;
     &:hover {
         filter: brightness(110%);
