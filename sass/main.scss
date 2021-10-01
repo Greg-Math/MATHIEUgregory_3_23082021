@@ -38,7 +38,7 @@
         z-index: 10;
     }
 }
-#Loader {
+#loader {
     height: 0px;
     width: 0px;
     background-color: black;
@@ -59,18 +59,21 @@ a {
     color: $couleur-texte-primaire;
 }
 /* Bouton */
-.Bouton {
+.bouton {
     @include Bouton-primaire;
 }
 /* Class Margin-left */
-.Marg-left {
+.marg-left {
     margin-left: 15px;
 }
 
 /* Page d'Accueil */
 
 /* Section Intro */
-#Loc { /* Localisation */
+#loc, #intro {
+    background-color: $couleur-fond-primaire;
+}
+#loc { /* Localisation */
     height: 45px;
     width: 100%;
     display: flex;
@@ -86,7 +89,7 @@ a {
        font-weight: bold; 
     }
 }
-#Intro { /* Introduction Page d'Accueil */
+#intro { /* Introduction Page d'Accueil */
     height: 250px;
     width: 100%;
     display: flex;
@@ -109,7 +112,9 @@ a {
     }
 }
 /* Fonctionnement */
-#Notice {
+#notice {
+    background-color: white;
+    padding-left: 20px;
     ol {
         height: 220px;
         display: flex;
@@ -121,7 +126,7 @@ a {
     }
     li {
         height: 60px;
-        width: 270px;
+        width: 330px;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -147,20 +152,20 @@ a {
         }
     }
 }
-.Notice_li-gris {
+.notice_li-gris {
     background-color: $couleur-fond-primaire ;
     i {
         color: grey;
     }
 }
-.Notice_li-rose {
+.notice_li-rose {
     background-color: #f5edff ;
     i {
         color: $couleur-primaire;
     }
 }
 /* Restaurant Accueil */
-#Resto-Accueil {
+#resto-Accueil {
     width: 100%;
     padding-bottom: 50px;
     background-color: $couleur-fond-primaire;
@@ -184,7 +189,7 @@ a {
                 flex-direction: column;
                 justify-content: flex-end;
                 position: relative;
-                .Legende-Resto {
+                .legende-resto {
                     height: 25%;
                     display: flex;
                     align-items: center;
@@ -195,7 +200,7 @@ a {
                     i {
                         font-size: 1.5em;
                     }
-                    &__Texte {
+                    &__texte {
                         height: 100%;
                         display: flex;
                         flex-direction: column;
@@ -210,12 +215,12 @@ a {
     }  
 }
 
-.Resto-Accueil-Img {
+.resto-accueil-img {
     height: 75%;
 	width: 100%;
 	object-fit: cover;
 }
-.New {
+.new {
     height: 25px;
     width: 70px;
     display: flex;
@@ -232,7 +237,7 @@ a {
     top: 10px;
     z-index: 1;
 }
-.Coeur {
+.coeur {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,7 +285,7 @@ a {
     color: $couleur-footer;
 }
 
-.Bloc-Img {
+.bloc-img {
     height: 230px;
     width: 100%;
     display: flex;
@@ -289,7 +294,7 @@ a {
     overflow: hidden;
 }
 
-.Menu-Complet {
+.menu-complet {
     height: 980px;
     width: 100%;
     display: flex;
@@ -301,7 +306,7 @@ a {
     overflow: hidden;
     position: relative;
     top: -30px;
-    &__Titre {
+    &__titre {
         height: 60px;
         display: flex;
         align-items: center;
@@ -312,17 +317,17 @@ a {
             font-size: 1.5em;
         }
     }
-    .Bouton {
+    .bouton {
         margin-top: 40px;
     }
 }
 
-.Menu-section {
+.menu-section {
     height: 260px;
     display: flex;
     flex-direction: column;
     font-size: 0.8em;
-    &__Titre {
+    &__titre {
         p {
             margin-bottom: 3px;
         }
@@ -335,7 +340,7 @@ a {
     }
 }
 
-.Menu-choix {
+.menu-choix {
     height: 60px;
     width: 285px;
     display: flex;
@@ -394,21 +399,21 @@ a {
         font-size: 1.5em;
         transition: all 0.5s;
     }
-    &:hover > .Menu-choix__check {
+    &:hover > .menu-choix__check {
         margin-right: 0px;
         transition: all 0.5s;
     }
-    &:hover > .Menu-choix__check > i {
+    &:hover > .menu-choix__check > i {
         transform: rotate(360deg);
         transition: all .5s;
     }
-    &:hover > .Menu-choix__texte > div {
+    &:hover > .menu-choix__texte > div {
         width: 185px;
         transition: all 0.5s;
     }
 }
 @for $i from 1 through 9 {
-    .Delay#{$i} {
+    .delay#{$i} {
       animation-delay: $i*$delai-animation-menu;
     }
 }
@@ -418,12 +423,12 @@ a {
     body {
         font-size: 1.1em;
     }
-    #Notice {
+    #notice {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    #Resto-Accueil {
+    #resto-accueil {
         height: 650px;
         display: flex;
         flex-direction: column;
@@ -441,7 +446,7 @@ a {
     body {
         font-size: 1.1em;
     }
-    #Notice {
+    #notice {
         height: 200px;
         display: flex;
         flex-direction: column;
@@ -452,7 +457,7 @@ a {
             justify-content: space-between;
         }
     }
-    #Resto-Accueil {
+    #resto-accueil {
         height: 370px;
         display: flex;
         flex-direction: column;
@@ -462,7 +467,7 @@ a {
             justify-content: space-around;
         }
     }
-    .Menu-Complet {
+    .menu-complet {
         height: 450px;
         flex-direction: row;
         justify-content: space-around;
@@ -474,10 +479,10 @@ a {
             font-size: 1.5em;
         }
     }
-    .Menu-section__Titre {
+    .menu-section__Titre {
         font-size: 1.2em;
     }
-    .Bloc-Img {
+    .bloc-img {
         height: 1200px;
         width: 100%;
         img {
